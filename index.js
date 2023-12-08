@@ -6,9 +6,17 @@ var fullScreenBtn = document.getElementById("fullScreen");
 var imageContainer = document.getElementById("imageContainer");
 var html = document.getElementsByTagName("html")[0];
 var logo = document.getElementById("logo");
+var periodsTextbox = document.getElementById("periodsTextbox");
+var periods = document.getElementById("periods");
+var date = document.getElementById("date");
+var dateandPeriod = document.getElementById("dateandperiods");
 var current = 0;
 var images = [];
 var interval;
+setInterval(()=>{
+    var dateNow = new Date();
+date.textContent = dateNow.toLocaleDateString()+" "+dateNow.toLocaleTimeString();
+}, 1000)
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js'
 
 // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
@@ -58,12 +66,13 @@ rawText.split("\n").forEach(event => {
 eventsList.innerHTML += `<li>${event}</li>`;
     
 });
+periods.textContent = periodsTextbox.value;
 });
 function hideUneededElements(){
     displayBtn.style.display = "none";
     eventsTextbox.style.display = "none";
     fullScreenBtn.style.display = "none";
-
+    periodsTextbox.style.display = "none";
 }
 fullScreenBtn.addEventListener("click", ()=>{
     if (html.requestFullscreen) {
@@ -83,6 +92,9 @@ function fullscreenchanged(event) {
         eventsTextbox.style.display = "block";
         fullScreenBtn.style.display = "block";
         logo.style.display = "block";
+periodsTextbox.style.display = "block";
+dateandPeriod.style.position = "relative";
+
         imageContainer.innerHTML = ``;
 
         clearTimeout();
@@ -92,7 +104,9 @@ function beginDisplaying(){
    interval = setInterval(()=>{
         if(images.length +1>current + 1){
             current += 1;
-            imageContainer.innerHTML = `<img class="imageSlide" src="${images[current - 1]}"/>`
+    dateandPeriod.style.position = "absolute";
+            
+            imageContainer.innerHTML = `<img class="imageSlide" src="data:image/png;base64, ${images[current - 1]}"/>`
         document.getElementById("title").style.display = "none";
         document.getElementById("eventsList").style.display = "none";
     logo.style.display = "none";
@@ -100,6 +114,7 @@ function beginDisplaying(){
         }
         else{
             imageContainer.innerHTML = ``;
+            dateandPeriod.style.position = "relative";
 
             anim();
             

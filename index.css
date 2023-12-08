@@ -61,7 +61,8 @@ animation: logoAnimLeave 1s reverse;
 .cornerTitle{
     display: block;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.5vw;
+
 font-family: "Interspace";
 display: block;
 font-family: "Trispace";
@@ -73,8 +74,8 @@ margin-top: 20px;
 .titleTitle{
     display: block;
     text-align: left;
-    font-size: 40px;
-display: block;
+    font-size: 3vw;
+    display: block;
 font-family: "Trispace";
 color: #003366;
 text-transform: uppercase;
@@ -87,15 +88,32 @@ margin-top: 20px;
     text-transform: uppercase;
 margin-left: 20px;
 margin-top: 20px;
-font-size: 40px;
+font-size: 3vw;
 }
 .eventsList li{
     margin-top: 10px;
 }
 .imageSlide{
     max-width: 100%;
-    max-height: 100%;
+    max-height: 100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 .events{
     width:90%;
+}
+.date, .periods{
+    font-family: "Trispace";
+    color: #003366;
+    text-transform: uppercase;
+margin-left: 20px;
+margin-top: 20px;
+font-size: 4vw;
+background-color: white;
+display: block;
+}
+.dateandperiods{
+    max-width: 30%;
 }
