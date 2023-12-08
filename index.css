@@ -1,0 +1,101 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.logoImg{
+    height: 200px;
+}
+.websiteTitle{
+    display: block;
+    font-family: "Trispace";
+    text-align: center;
+    color: #003366;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.logoContainer{
+
+position: absolute;
+top:50%;
+left:50%;
+animation: logoAnim 1s ;
+transform: translate(-50%, -50%);    
+}
+.logoLeave{
+    position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);    
+animation: logoAnimLeave 1s reverse;
+
+}
+@keyframes logoAnim{
+    from{
+
+        position: absolute;
+        top:150%; 
+        display: none;
+    }
+    to{
+        position: absolute;
+        top:50%; 
+
+    }
+}
+@keyframes logoAnimLeave{
+    from{
+
+        position: absolute;
+        top:150%; 
+        display: none;
+    }
+    to{
+        position: absolute;
+        top:50%; 
+
+    }
+}
+.cornerTitle{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+font-family: "Interspace";
+display: block;
+font-family: "Trispace";
+color: #003366;
+text-transform: uppercase;
+margin-left: 20px;
+margin-top: 20px;
+}
+.titleTitle{
+    display: block;
+    text-align: left;
+    font-size: 40px;
+display: block;
+font-family: "Trispace";
+color: #003366;
+text-transform: uppercase;
+margin-left: 20px;
+margin-top: 20px;
+}
+.eventsList{
+    font-family: "Trispace";
+    color: #003366;
+    text-transform: uppercase;
+margin-left: 20px;
+margin-top: 20px;
+font-size: 40px;
+}
+.eventsList li{
+    margin-top: 10px;
+}
+.imageSlide{
+    max-width: 100%;
+    max-height: 100%;
+}
+.events{
+    width:90%;
+}
