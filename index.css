@@ -113,7 +113,14 @@ margin-top: 20px;
 font-size: 4vw;
 background-color: white;
 display: block;
+width:90%;
+text-wrap: wrap;
+
+white-space: initial;
 }
 .dateandperiods{
     max-width: 30%;
+    text-wrap: wrap;
+    white-space: initial;
+
 }

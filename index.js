@@ -110,12 +110,14 @@ function beginDisplaying(){
         document.getElementById("title").style.display = "none";
         document.getElementById("eventsList").style.display = "none";
     logo.style.display = "none";
+    dateandPeriod.style.overflowWrap = "break-word";
 
         }
         else{
             imageContainer.innerHTML = ``;
             dateandPeriod.style.position = "relative";
-
+            dateandPeriod.style.position = "relative";
+            dateandPeriod.style.overflowWrap = "normal";
             anim();
             
         }
