@@ -10,7 +10,7 @@ html, body{
 }
 .websiteTitle{
     display: block;
-    font-family: "Trispace";
+    font-family: "Kalnia";
     text-align: center;
     color: #003366;
     font-size: 20px;
@@ -65,7 +65,7 @@ animation: logoAnimLeave 1s reverse;
 
 font-family: "Interspace";
 display: block;
-font-family: "Trispace";
+font-family: "Kalnia";
 color: #003366;
 text-transform: uppercase;
 margin-left: 20px;
@@ -76,14 +76,14 @@ margin-top: 20px;
     text-align: left;
     font-size: 3vw;
     display: block;
-font-family: "Trispace";
+font-family: "Kalnia";
 color: #003366;
 text-transform: uppercase;
 margin-left: 20px;
 margin-top: 20px;
 }
 .eventsList{
-    font-family: "Trispace";
+    font-family: "Kalnia";
     color: #003366;
     text-transform: uppercase;
 margin-left: 20px;
@@ -105,7 +105,7 @@ font-size: 3vw;
     width:90%;
 }
 .date, .periods{
-    font-family: "Trispace";
+    font-family: "Kalnia";
     color: #003366;
     text-transform: uppercase;
 margin-left: 20px;
