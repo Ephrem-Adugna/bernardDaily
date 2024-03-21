@@ -95,7 +95,7 @@ font-size: 3vw;
 }
 .imageSlide{
     max-width: 100%;
-    max-height: 100vh;
+    height: 100vh;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
